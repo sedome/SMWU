@@ -61,8 +61,6 @@ def generate_launch_description():
             parameters=[{'use_sim_time': use_sim_time}],
             arguments=['-resolution', resolution, '-publish_period_sec', publish_period_sec],
             remappings=[
-                ('/map', '/cartographer/map'),
-                ('/map_updates', '/cartographer/map_updates')
             ],
         ),
 
